@@ -1,0 +1,48 @@
+{
+  "Zipf Distribution_500req": {
+    "config": {
+      "workload_type": "Zipf Distribution",
+      "num_requests": 500,
+      "key_range": 150,
+      "cache_capacity": 30
+    },
+    "results": [
+      {
+        "system_name": "Simulator-LRU",
+        "total_operations": 500,
+        "hit_rate": 71.39999999999999,
+        "miss_rate": 28.599999999999998,
+        "avg_latency_ms": 0.0052852630615234375,
+        "max_latency_ms": 0.016689300537109375,
+        "min_latency_ms": 0.00286102294921875,
+        "throughput_ops_per_sec": 104669.19544819325,
+        "memory_usage_mb": 0.00286102294921875,
+        "errors": 0
+      },
+      {
+        "system_name": "Simulator-LFU",
+        "total_operations": 500,
+        "hit_rate": 73.8,
+        "miss_rate": 26.200000000000003,
+        "avg_latency_ms": 0.004403591156005859,
+        "max_latency_ms": 0.015974044799804688,
+        "min_latency_ms": 0.0030994415283203125,
+        "throughput_ops_per_sec": 111307.89236240115,
+        "memory_usage_mb": 0.00286102294921875,
+        "errors": 0
+      },
+      {
+        "system_name": "Simulator-FIFO",
+        "total_operations": 500,
+        "hit_rate": 65.4,
+        "miss_rate": 34.599999999999994,
+        "avg_latency_ms": 0.006091594696044922,
+        "max_latency_ms": 0.6234645843505859,
+        "min_latency_ms": 0.00286102294921875,
+        "throughput_ops_per_sec": 85846.82140079414,
+        "memory_usage_mb": 0.00286102294921875,
+        "errors": 0
+      }
+    ]
+  }
+}

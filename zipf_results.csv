@@ -1,0 +1,4 @@
+capacity,current_size,total_accesses,hits,misses,evictions,hit_rate_percent,miss_rate_percent,average_access_time_ms,memory_efficiency,simulation_time_seconds,strategy,workload_size
+25,25,500,357,143,118,71.4,28.6,0.0053,100.0,0.1033,Least Recently Used,500
+25,25,500,368,132,107,73.6,26.4,0.0048,100.0,0.0832,Least Frequently Used,500
+25,25,500,329,171,146,65.8,34.2,0.0039,100.0,0.1019,First In First Out,500

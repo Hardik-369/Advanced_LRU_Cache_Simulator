@@ -1,0 +1,226 @@
+{
+  "Sequential Access_1000req": {
+    "config": {
+      "workload_type": "Sequential Access",
+      "num_requests": 1000,
+      "key_range": 200,
+      "zipf_parameter": 1.0,
+      "locality_factor": 0.8
+    },
+    "results": {
+      "Least Recently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 0,
+        "misses": 1000,
+        "evictions": 950,
+        "hit_rate_percent": 0.0,
+        "miss_rate_percent": 100.0,
+        "average_access_time_ms": 0.0078,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.6066,
+        "strategy": "Least Recently Used",
+        "workload_size": 1000
+      },
+      "Least Frequently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 0,
+        "misses": 1000,
+        "evictions": 950,
+        "hit_rate_percent": 0.0,
+        "miss_rate_percent": 100.0,
+        "average_access_time_ms": 0.0171,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.9483,
+        "strategy": "Least Frequently Used",
+        "workload_size": 1000
+      },
+      "First In First Out": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 0,
+        "misses": 1000,
+        "evictions": 950,
+        "hit_rate_percent": 0.0,
+        "miss_rate_percent": 100.0,
+        "average_access_time_ms": 0.009,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 1.1162,
+        "strategy": "First In First Out",
+        "workload_size": 1000
+      }
+    }
+  },
+  "Random Access_1000req": {
+    "config": {
+      "workload_type": "Random Access",
+      "num_requests": 1000,
+      "key_range": 200,
+      "zipf_parameter": 1.0,
+      "locality_factor": 0.8
+    },
+    "results": {
+      "Least Recently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 239,
+        "misses": 761,
+        "evictions": 711,
+        "hit_rate_percent": 23.9,
+        "miss_rate_percent": 76.1,
+        "average_access_time_ms": 0.0089,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 1.2667,
+        "strategy": "Least Recently Used",
+        "workload_size": 1000
+      },
+      "Least Frequently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 256,
+        "misses": 744,
+        "evictions": 694,
+        "hit_rate_percent": 25.6,
+        "miss_rate_percent": 74.4,
+        "average_access_time_ms": 0.0125,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.6135,
+        "strategy": "Least Frequently Used",
+        "workload_size": 1000
+      },
+      "First In First Out": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 240,
+        "misses": 760,
+        "evictions": 710,
+        "hit_rate_percent": 24.0,
+        "miss_rate_percent": 76.0,
+        "average_access_time_ms": 0.007,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.4805,
+        "strategy": "First In First Out",
+        "workload_size": 1000
+      }
+    }
+  },
+  "Zipf Distribution_1000req": {
+    "config": {
+      "workload_type": "Zipf Distribution",
+      "num_requests": 1000,
+      "key_range": 200,
+      "zipf_parameter": 1.2,
+      "locality_factor": 0.8
+    },
+    "results": {
+      "Least Recently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 764,
+        "misses": 236,
+        "evictions": 186,
+        "hit_rate_percent": 76.4,
+        "miss_rate_percent": 23.6,
+        "average_access_time_ms": 0.0077,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.1592,
+        "strategy": "Least Recently Used",
+        "workload_size": 1000
+      },
+      "Least Frequently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 783,
+        "misses": 217,
+        "evictions": 167,
+        "hit_rate_percent": 78.3,
+        "miss_rate_percent": 21.7,
+        "average_access_time_ms": 0.0069,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.1567,
+        "strategy": "Least Frequently Used",
+        "workload_size": 1000
+      },
+      "First In First Out": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 716,
+        "misses": 284,
+        "evictions": 234,
+        "hit_rate_percent": 71.6,
+        "miss_rate_percent": 28.4,
+        "average_access_time_ms": 0.0049,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.1817,
+        "strategy": "First In First Out",
+        "workload_size": 1000
+      }
+    }
+  },
+  "Temporal Locality_1000req": {
+    "config": {
+      "workload_type": "Temporal Locality",
+      "num_requests": 1000,
+      "key_range": 200,
+      "zipf_parameter": 1.0,
+      "locality_factor": 0.8
+    },
+    "results": {
+      "Least Recently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 847,
+        "misses": 153,
+        "evictions": 103,
+        "hit_rate_percent": 84.7,
+        "miss_rate_percent": 15.3,
+        "average_access_time_ms": 0.0051,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.0995,
+        "strategy": "Least Recently Used",
+        "workload_size": 1000
+      },
+      "Least Frequently Used": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 506,
+        "misses": 494,
+        "evictions": 444,
+        "hit_rate_percent": 50.6,
+        "miss_rate_percent": 49.4,
+        "average_access_time_ms": 0.0097,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.4119,
+        "strategy": "Least Frequently Used",
+        "workload_size": 1000
+      },
+      "First In First Out": {
+        "capacity": 50,
+        "current_size": 50,
+        "total_accesses": 1000,
+        "hits": 846,
+        "misses": 154,
+        "evictions": 104,
+        "hit_rate_percent": 84.6,
+        "miss_rate_percent": 15.4,
+        "average_access_time_ms": 0.0027,
+        "memory_efficiency": 100.0,
+        "simulation_time_seconds": 0.0966,
+        "strategy": "First In First Out",
+        "workload_size": 1000
+      }
+    }
+  }
+}

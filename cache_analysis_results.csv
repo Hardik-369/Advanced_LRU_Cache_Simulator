@@ -1,0 +1,13 @@
+workload_type,strategy,capacity,hit_rate_percent,miss_rate_percent,average_access_time_ms,memory_efficiency,total_accesses,hits,misses,evictions,simulation_time_seconds
+Sequential Access,Least Recently Used,50,0.0,100.0,0.0078,100.0,1000,0,1000,950,0.6066
+Sequential Access,Least Frequently Used,50,0.0,100.0,0.0171,100.0,1000,0,1000,950,0.9483
+Sequential Access,First In First Out,50,0.0,100.0,0.009,100.0,1000,0,1000,950,1.1162
+Random Access,Least Recently Used,50,23.9,76.1,0.0089,100.0,1000,239,761,711,1.2667
+Random Access,Least Frequently Used,50,25.6,74.4,0.0125,100.0,1000,256,744,694,0.6135
+Random Access,First In First Out,50,24.0,76.0,0.007,100.0,1000,240,760,710,0.4805
+Zipf Distribution,Least Recently Used,50,76.4,23.6,0.0077,100.0,1000,764,236,186,0.1592
+Zipf Distribution,Least Frequently Used,50,78.3,21.7,0.0069,100.0,1000,783,217,167,0.1567
+Zipf Distribution,First In First Out,50,71.6,28.4,0.0049,100.0,1000,716,284,234,0.1817
+Temporal Locality,Least Recently Used,50,84.7,15.3,0.0051,100.0,1000,847,153,103,0.0995
+Temporal Locality,Least Frequently Used,50,50.6,49.4,0.0097,100.0,1000,506,494,444,0.4119
+Temporal Locality,First In First Out,50,84.6,15.4,0.0027,100.0,1000,846,154,104,0.0966
